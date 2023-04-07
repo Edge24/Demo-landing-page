@@ -5,8 +5,14 @@
 
 body{
     background: linear-gradient(to bottom right, #000121, #002b0c);
-    height: 600vh;
+    height: 589vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    height: 590vh;
+  }
 }
 
 ::selection{
@@ -157,7 +163,7 @@ body{
 
 .overlay-content {
   position: relative;
-  top: 46%;
+  top: 20%;
   width: 80%;
   text-align: center;
   margin-top: 30px;
@@ -183,7 +189,7 @@ body{
   font-size: 17px;
   border: none;
   float: left;
-  width: 80%;
+  width: 60%;
   background: rgba(255, 255, 255, 0.785);
 }
 
@@ -193,7 +199,7 @@ body{
 
 .overlay button {
   float: left;
-  width: 10%;
+  width: 20%;
   padding: 15px;
   background: #888383;
   font-size: 17px;
@@ -266,6 +272,17 @@ body{
 .soclinks{
   padding: 8px;
 }
+@media only screen and (max-width: 900px) {
+  .hero {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 3rem;
+    text-align: center;
+    height: 70vh;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .hero {
@@ -274,7 +291,7 @@ body{
     place-items: center;
     gap: 3rem;
     text-align: center;
-    height: 68vh;
+    height: 70vh;
   }
   
   .right-hero {
@@ -325,63 +342,6 @@ body{
 
   .soclinks{
     margin-left: 32%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .hero {
-    display: block;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    gap: 3rem;
-    text-align: center;
-    height: 96vh;
-  }
-  
-  .right-hero {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-  }
-  
-  .txt {
-    font-size: 2rem;
-    font-family: 'Carter One', sans-serif;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .txt__under {
-    font-weight: 200;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-  }
-  
-  .desc {
-    padding: .5rem;
-    color: rgb(255, 255, 255);
-  }
-  
-  .txt::first-letter {
-    font-size: 1.8rem;
-  }
-  
-  .exclamation {
-    color: #ffffff;
-  }
-  
-  .left-hero {
-    width: auto;
-    display: grid;
-    place-items: center;
-    margin-top: 4rem;
-  }
-  
-  .left-hero img {
-    width: 100%;
-    border-radius: 0;
-    margin-left: 0;
   }
 }
 
@@ -474,7 +434,7 @@ body{
 
   @media only screen and (max-width: 600px) and (max-width: 740px){
     #about-us{
-        height: 70vh;
+        height: 90vh;
         width: 100%;
         padding: 60px 0;
         margin-bottom: 5px;
@@ -488,11 +448,11 @@ body{
       }
       .about{
         width: 100%;
-        height: 65vh;
-        padding: 15px;
+        height: 86vh;
+        padding: 12px;
         max-width: 85%;
         margin: 0 auto;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         background: rgba(41, 36, 51, 0.863);
         color: #fff;
         border-radius: 40px;
@@ -522,57 +482,6 @@ body{
         margin-top: 20px;
       }
   }
-
-  @media only screen and (max-width: 900px){
-    #about-us{
-      height: 100vh;
-      width: 100%;
-      padding: 60px 0;
-      margin-bottom: 5px;
-    }
-    
-    .about .pic{
-      height: 50%;
-      border: 1px solid rgb(47, 101, 171);
-      width:  100%;
-      border-radius: 30px;
-    }
-    .about{
-      width: 100%;
-      height: 100vh;
-      padding: 20px;
-      max-width: 85%;
-      margin: 0 auto;
-      margin-bottom: 15px;
-      background: rgba(41, 36, 51, 0.863);
-      color: #fff;
-      border-radius: 40px;
-      border: 1px solid rgba(76, 76, 76, 0.822);
-      display: block;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .text{
-      width: 100%;
-    }
-    .text h5{
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-      margin-top: 20px;
-      text-align: center;
-    }
-    span{
-      color: #4070f4;
-    }
-    .text p{
-      font-size: 15px;
-      line-height: 25px;
-    }
-    .data{
-      margin-top: 20px;
-    }
-}
 
 /* About end */
 
@@ -691,13 +600,18 @@ body{
     text-align: justify;
     color: white;
     margin: 20px;
-    border-radius: 40px;
+    border-radius: 20px;
   }
   
   .terms h5{
     font-size: 50px;
     margin-bottom: 8px;
     text-align: center;
+  }
+
+  .terms p{
+    text-align: left;
+    font-size: 15px;
   }
 }
 
@@ -730,7 +644,7 @@ body{
 
 @media screen and (max-width: 600px) {
   #privacy{
-    height: 80vh;
+    height: 60vh;
   }
   
   .policy{
@@ -750,6 +664,7 @@ body{
   
   .policy_text p{
     font-size: 15px;
+    text-align: left;
   }
 }
 
@@ -823,8 +738,27 @@ body{
 
 
 @media screen and (max-width: 600px){
+  .contact_us{
+    display: block;
+    margin: 20px;
+    color: white;
+  }
+  
+  .map{
+    width: 95%;
+    height: 240px;
+    padding: 10px;
+  }
+  
   .map iframe{
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .form_er{
+    width: 95%;
+    padding: 10px;
   }
 }
 
