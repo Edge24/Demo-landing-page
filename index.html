@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo landing page</title>
+    <link rel="icon" href="img/logo.png" type="img/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<!-- header starts -->
+
+    <header class="header">
+        <div id="logo" class="openBtn" onclick="openSearch()"><img src="img/search.png"></div>
+        <p>THE LOGO</p>
+        <nav class="navbar">
+         <div id="menu-btn" class="fas fa-bars" onclick="openNav()"></div>
+        </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close" aria-hidden="true"></i></a>
+        <a href="#">Home</a>
+        <a href="#about-us">About us</a>
+        <a href="#contact">Contact us</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="#term">Terms and conditions</a>
+      </div>
+
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+
+      
+
+<!-- header end -->
+
+<!-- home section starts  -->
+
+<section class="hero" id="hero__section">
+  <div class="left-hero">
+    <img id="hero__img" src="img/hero.png" alt="left-hero">
+</div>
+  <article class="right-hero">
+      <h1 class="txt">Welcome</span></h1>
+      <h2 class="txt__under">to our website</h2>
+      <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni fugiat anim.</p>
+      <div class="soclinks">
+          <a href="#contact" class="btn">Contact us</a>
+      </div>
+  </article>
+</section>
+
+<!-- home section ends -->
+
+<!-- About start -->
+
+<section id="about-us">
+    <div class="about">
+      <img src="img/writer.gif" class="pic">
+      <div class="text">
+        <h5>About our <span>Website</span></h5>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque voluptatum ipsum nihil nesciunt libero dignissimos sed ut aut animi error ullam placeat consectetur repudiandae quas sit cumque fugiat, quis dolore hic enim deserunt doloribus!</p>
+      <div class="data">
+        <a href="#" class="btn">Learn more</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- About end -->
+
+<!-- courses section starts  -->
+
+<section id="course">
+
+  <div class="course-info">
+    <h2>Our courses</h2>
+  </div>
+
+  <div class="course-container">
+
+    <div class="left_course" id="card">
+      <img src="img/card1.png">
+      <h2>kolkata</h2>
+      <div class="bottom_btn"><a href="">Apply</a></div>
+    </div>
+
+    <div class="middle_course" id="card">
+      <img src="img/card2.png">
+      <h2>kolkata</h2>
+      <div class="bottom_btn"><a href="">Apply</a></div>
+    </div>
+
+    <div class="right_course" id="card">
+      <img src="img/card3.png">
+      <h2>kolkata</h2>
+      <div class="bottom_btn"><a href="">Apply</a></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- courses section ends -->
+
+<!-- terms and condition start -->
+
+<section id="term">
+  <div class="terms">
+    <h5>Terms and <span>condition</span></h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ut libero ipsa hic quis, commodi quisquam itaque voluptatum quaerat similique ipsum exercitationem placeat, tempora deserunt? Quaerat laudantium quam eaque, cumque illo impedit, dolorum a vero eius numquam harum nisi voluptas dolor nam repudiandae porro quidem, ullam accusamus saepe. Placeat, culpa?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim accusantium est eum itaque, fugiat cumque, adipisci culpa ipsum ullam, quibusdam quod tenetur error nam. Magni earum doloremque tempore, ex laboriosam quasi aspernatur mollitia commodi id repudiandae, itaque dolor veritatis, labore fugiat nam iste cumque nemo autem molestias ratione asperiores.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ut libero ipsa hic quis, commodi quisquam itaque voluptatum quaerat similique ipsum exercitationem placeat, tempora deserunt? Quaerat laudantium quam eaque, cumque illo impedit, dolorum a vero eius numquam harum nisi voluptas dolor nam repudiandae porro quidem, ullam accusamus saepe. Placeat, culpa?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim accusantium est eum itaque, fugiat cumque, adipisci culpa ipsum ullam, quibusdam quod tenetur error nam. Magni earum doloremque tempore, ex laboriosam quasi aspernatur mollitia commodi id repudiandae, itaque dolor veritatis, labore fugiat nam iste cumque nemo autem molestias ratione asperiores.</p>
+  </div>
+</section>
+
+<!-- terms and condition end -->
+
+<!-- privacy start -->
+
+<section id="privacy">
+
+  <div class="policy">
+    <div class="policy_text">
+      <h5>Privacy <span>policy</span></h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque obcaecati aliquam doloremque, eius nemo velit! Accusamus, porro inventore. Neque odit aliquid consectetur harum ut quam ex quaerat beatae animi ea, eos excepturi impedit officia reiciendis. Officiis tenetur culpa tempora similique dignissimos accusamus, id mollitia laborum dolor hic et nihil ducimus minus voluptatum dolorum. Reiciendis veniam debitis aperiam expedita, distinctio dolorum.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- privacy end -->
+
+<!-- contact start -->
+
+<section id="contact">
+  
+  <h2>Contact with us</h2>
+
+  <div class="contact_us">
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21192653305!2d88.27731131627552!3d22.535570756976277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1680853787251!5m2!1sen!2sin"></iframe>
+      </div>
+      <div class="form_er">
+        <form>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <a href="#" class="btn">contact </a>
+        </form>
+      </div>
+  </div>
+</section>
+
+<!-- contact end -->
+
+<!-- footer start -->
+<section id="footer_sec">
+<footer>
+  
+  <div class="row copyright">
+    <div class="footer-menu">
+  
+    <a href="#">Home</a>
+    <a href="#about-us">About</a>
+    <a href="">Contact</a>
+
+    <a class="none">|</a>
+
+    <a href="#"><i class="fab fa-facebook-square"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-google"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+
+  
+    </div>
+     <p>Copyright &copy; 2023 Footer section</p>
+  </div>
+
+</footer>
+
+</section>
+
+<!-- footer end -->
+
+
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/app.js"></script>
+</html>
